@@ -1,0 +1,20 @@
+#summary How to use it
+#labels Featured
+= Introduction =
+
+Basic usage instructions.
+
+
+= Details =
+
+Right now only reading of *.kdb files AES + SHA256 encrypted is supported.
+Pretty straightforward:
+{{{
+KeePassDataBase keePassDb = KeePassDataBaseManager.openDataBase(new File(
+				"testing-pass-key.kdb"), new File("testing-key.key"), "testing");
+		KeePassDataBaseV1 kdb1 = (KeePassDataBaseV1) keePassDb; 
+		kdb1.getGroups();
+		kdb1.getEntries();
+}}}
+
+key file or password can be *null* never both. Have fun!
