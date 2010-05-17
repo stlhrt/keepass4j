@@ -1,0 +1,8 @@
+#summary History of changes in the library
+#labels Featured
+
+= Versions =
+
+== 0.0.3 ==
+  * Fix Issue#1 & Issue#2
+  * Groups deserialization fixes
